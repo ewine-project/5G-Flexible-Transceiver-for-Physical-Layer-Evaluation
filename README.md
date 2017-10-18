@@ -58,3 +58,5 @@ xch = do_channel(x, 1, snr(si));
 ```
 ![Alt text](https://user-images.githubusercontent.com/24733570/31707991-1a24ffc2-b3ee-11e7-8d7c-9d213a6fcc0b.jpg)
 
+# Contact
+adnan.shahid@ugent.be
