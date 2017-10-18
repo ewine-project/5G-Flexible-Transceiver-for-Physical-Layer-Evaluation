@@ -17,4 +17,6 @@ The functions are grouped into several parts:
 * get_* These functions return objects that are commonly used for GFDM simulations.
 * calc_* These functions calculate (not only) performance values based on the passed objects.
 * do_* These more complex functions do actual simulation steps.
-``` Remark: To use the library functions, you must include the library folder and subfolders to the MATLAB path.
+```
+Remark: To use the library functions, you must include the library folder and subfolders to the MATLAB path.
+````
