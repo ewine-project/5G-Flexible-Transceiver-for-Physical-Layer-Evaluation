@@ -23,3 +23,9 @@ The functions are grouped into several parts:
 > The GFDM library has a folder with examples of use for the functions (GFDM_library\examples). With the purpose of illustration, an example file (GFDM_library\examples\ser_in_awgn.m) for generation of a GFDM SER (Symbol Error Rate) curve is detailed below.
 
 For the GFDM configuration, a parameter structure *p* contains the configuration of the GFDM system.
+```MATLAB
+% GFDM configuration
+p = get_defaultGFDM('BER');
+p.pulse = 'rc_fd';
+p.a = 0.5;
+```
