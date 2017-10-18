@@ -37,6 +37,7 @@ p.a = 0.5;
 s = get_random_symbols(p);
 ```
 The function *get_random_symbols(p)* returns a sequence of integers in range 0 ⋯ 2𝜇−1 which are the transmitted data symbols.
+
 2. QAM-Modulate the symbols to QAM symbols and map the symbol stream to the data matrix
 ```MATLAB 
 % map them to qam and to the D matrix
