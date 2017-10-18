@@ -7,5 +7,4 @@ of the data transfer by transmitting multiply copies of the data stream. However
 applied on the GFDM flexible waveform generation framework and, since GFDM is a nonorthogonal
 waveform, its combination with STC is not a straight forward approach.
 
-![Alt text](https://user-images.githubusercontent.com/24733570/31705576-35c80826-b3e6-11e7-9948-7cf07e665db1.png)
-Figure 1. Block diagram of the 5G Flexible transmitter.
+![Alt text](https://user-images.githubusercontent.com/24733570/31706074-fdd27832-b3e7-11e7-9ffe-a791747338fd.png)
