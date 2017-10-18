@@ -8,3 +8,4 @@ applied on the GFDM flexible waveform generation framework and, since GFDM is a 
 waveform, its combination with STC is not a straight forward approach.
 
 ![Alt text](https://user-images.githubusercontent.com/24733570/31705576-35c80826-b3e6-11e7-9948-7cf07e665db1.png)
+Figure 1. Block diagram of the 5G Flexible transmitter.
