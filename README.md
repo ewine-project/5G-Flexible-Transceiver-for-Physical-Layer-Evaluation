@@ -31,14 +31,14 @@ p.a = 0.5;
 ```
 ![Alt text](https://user-images.githubusercontent.com/24733570/31707265-05a7e4ee-b3ec-11e7-9a22-01efc1c45e0b.png)
 ### GFDM Transmitter
-1. Create random data symbols
+1.Create random data symbols
 ```MATLAB
 % create symbols
 s = get_random_symbols(p);
 ```
 The function *get_random_symbols(p)* returns a sequence of integers in range 0 ⋯ 2𝜇−1 which are the transmitted data symbols.
 
-2. QAM-Modulate the symbols to QAM symbols and map the symbol stream to the data matrix
+2.QAM-Modulate the symbols to QAM symbols and map the symbol stream to the data matrix
 ```MATLAB 
 % map them to qam and to the D matrix
 D = do_map(p, do_qammodulate(s, p.mu));
