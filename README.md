@@ -31,16 +31,30 @@ p.a = 0.5;
 ```
 ![Alt text](https://user-images.githubusercontent.com/24733570/31707265-05a7e4ee-b3ec-11e7-9a22-01efc1c45e0b.png)
 ### GFDM Transmitter
-1.Create random data symbols
+1. Create random data symbols
 ```MATLAB
 % create symbols
 s = get_random_symbols(p);
 ```
 The function *get_random_symbols(p)* returns a sequence of integers in range 0 ⋯ 2𝜇−1 which are the transmitted data symbols.
 
-2.QAM-Modulate the symbols to QAM symbols and map the symbol stream to the data matrix
+2. QAM-Modulate the symbols to QAM symbols and map the symbol stream to the data matrix
 ```MATLAB 
 % map them to qam and to the D matrix
 D = do_map(p, do_qammodulate(s, p.mu));
 ```
 Map the integers in range 0 ⋯ 2𝜇−1 to a quadratic QAM modulation using the MATLAB function qammod. The one-dimensional symbol stream is mapped to the data matrix *D* according to the values of *𝐾𝑠𝑒𝑡* and *𝑀𝑠𝑒𝑡*. Empty sub-carriers and sub-symbols in *D* are set to zero. Afterwards there is the possibility to insert specific pilots or other information in the slots where no data is present.
+
+3. GFDM-Modulate the data matrix
+```MATLAB
+x = do_modulate(p, D);
+```
+The matrix **𝑫** is processed with the GFDM modulation scheme to produce a time domain signal with length 𝐾𝑀 that can be processed further.
+The transmitted signal is applied to an AWGN channel using the function do_channel. A channel object from MATLAB can be used as input parameter for this function for different channels.
+```MATLAB
+% channel -> AWGN
+xch = do_channel(x, 1, snr(si));% channel -> AWGN
+xch = do_channel(x, 1, snr(si));
+```
+
+
