@@ -9,4 +9,4 @@ applied on the GFDM flexible waveform generation framework and, since GFDM is a 
 waveform, its combination with STC is not a straight forward approach.
 
 ![Alt text](https://user-images.githubusercontent.com/24733570/31706074-fdd27832-b3e7-11e7-9ffe-a791747338fd.png)
-![Alt text] (https://user-images.githubusercontent.com/24733570/31706190-5ff0c38e-b3e8-11e7-9b8b-54a9972795fe.png)
+![Alt text](https://user-images.githubusercontent.com/24733570/31706190-5ff0c38e-b3e8-11e7-9b8b-54a9972795fe.png)
